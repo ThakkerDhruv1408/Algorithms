@@ -11,7 +11,7 @@ class Solution:
         return f"ValueError : {target} is not present in the list"
     
     
-    def linearSearch2(self, nums: List[int], target: int) -> int:       #O(n) & S = O(1)
+    def linearSearch2(self, nums: List[int], target: int) -> int:       # T = O(n) & S = O(1)
         
         for idx, val in enumerate(nums):
             
@@ -21,7 +21,7 @@ class Solution:
         return f"ValueError : {target} is not present in the list"
 
     
-    def linearSearch3(self, nums: List[int], target: int) -> int:       #O(n²) & S = O(1)
+    def linearSearch3(self, nums: List[int], target: int) -> int:       # T = O(n²) & S = O(1)
         
         for num in nums:
             
@@ -33,7 +33,7 @@ class Solution:
 
 # Testing
 
-# test = Solution()
-# nums = [1,4,7,8,5,2,0,3,6,9]
-# w = test.linearSearch1(nums , 5)
-# print(w)
+test = Solution()
+nums = [1,4,7,8,5,2,0,3,6,9]
+w = test.linearSearch1(nums , 5)
+print(w)
